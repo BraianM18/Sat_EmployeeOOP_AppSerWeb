@@ -90,8 +90,9 @@ namespace EmployeeOOP.Classes
         public override string ToString()
         {
             //dia/mes/año
-            var dateConcatenated1 = _day + "/" + _month + "/" + _year; // La más vieja y fea
-            var dateConcatenated2 = $"{_day:00}/{_month:00}/{_year:0000}"; // Interpolación
+            
+            //var dateConcatenated1 = _day + "/" + _month + "/" + _year; //la vieja
+            //var dateConcatenated2 = $"{_day:00}/{_month:00}/{_year:0000}"; // Interpolación
             var dateConcatenated3 = String.Format("{0:00}/{1:00}/{2:00}", _day, _month, _year); // Class String.Format
 
             return dateConcatenated3;

@@ -4,9 +4,11 @@
     {
         #region Properties
 
+        public int Hours { get; set; }
+
         public decimal HourValue { get; set; }
 
-        public int Hours { get; set; }
+        public decimal SalaryE { get; set; }
 
         #endregion
 
@@ -16,13 +18,15 @@
 
         public override decimal GetValueToPay()
         {
-            return HourValue * Hours;
+            SalaryE = Hours * HourValue;
+
+            return SalaryE;
         }
 
         public override string ToString()
         {
             return $"{base.ToString()}" +
-                $"Valor a Pagar: {HourValue * Hours:C2}\n\t";
+                $"Salario a Pagar: {SalaryE:C}\n\t";
         }
 
         #endregion

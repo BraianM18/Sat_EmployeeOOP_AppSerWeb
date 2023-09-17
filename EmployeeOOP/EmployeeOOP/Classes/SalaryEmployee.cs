@@ -23,7 +23,7 @@
         public override string ToString()
         {
             return $"{base.ToString()}" +
-                $"Salario Devengado: {Salary:C2}\n\t";
+                $"Salario Devengado: {Salary:C}\n\t";
         }
 
         #endregion

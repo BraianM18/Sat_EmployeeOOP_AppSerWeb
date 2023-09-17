@@ -12,7 +12,10 @@
 
         #region Methods
 
-        public ComissionEmployee() { }
+        public ComissionEmployee() 
+        {
+        
+        }
 
         public override decimal GetValueToPay()
         {
@@ -22,7 +25,7 @@
         public override string ToString()
         {
             return $"{base.ToString()}" +
-                $"Valor a Pagar por Comisiones: {(ComissionPercentaje / 100) * Sales:C2}\n\t";
+                $"Valor a Pagar Comision: {(ComissionPercentaje / 100) * Sales:C}\n\t";
         }
 
         #endregion
