@@ -30,7 +30,7 @@ try
     Console.WriteLine("\n");
 
 
-    Console.Write("Ingresa el nombre: ");
+    Console.Write("Ingresa el nombre: " );
     firstName = Console.ReadLine();
 
     Console.Write("Ingresa los apellidos: ");
